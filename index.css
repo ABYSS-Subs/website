@@ -1,0 +1,207 @@
+
+
+  .glow-impact {
+    font-weight: 800;
+    text-shadow: 0 0 50px #6BE8E1;
+
+  }
+
+  #sponsor-banner {
+    margin-bottom: 50px;
+    animation: pulse 1.5s ease-in-out infinite alternate;
+  }
+
+  #sponsor-banner:hover {
+    cursor:alias;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.02);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+
+
+.img_svg_head_bttm_cont {
+    margin-top: 50px;
+}
+
+.marquee-imgs {
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 200px;
+    width: 400px;
+}
+
+.marquee-imgs img {
+    height: 200px;
+    width: 400px;
+}
+
+.avatar-circle {
+    height: 100px;
+    width: 100px;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 50%;
+    
+}
+
+.circle-avatar-div {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(20vh);
+    visibility: hidden;
+    transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+    will-change: opacity, visibility;
+  }
+  
+  .fade-in-section.in-view {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+  }
+  
+
+
+    /* Keyframes for scrolling animation */
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
+
+    /* Marquee animation classes */
+    .marquee-inner {
+      animation: scroll 50s linear infinite; /* Adjust duration for speed */
+    }
+    .marquee-reverse .marquee-inner {
+      animation-direction: reverse;
+    }
+
+    
+    
+
+    /* Responsive adjustments for smaller screens */
+    @media (max-width: 650px) {
+      .marquee-inner {
+        animation-duration: 15s; /* Slightly faster on smaller screens */
+      }
+      .marquee-imgs {
+        height: 100px;
+    width: 200px;
+      }
+      .marquee-imgs img {
+        height: 100px;
+    width: 200px;
+      }
+    }
+
+  
+  /* Meet Our Team Section */
+  #meet-us { /* Dark background */
+    padding: 6rem 0; /* Add padding top and bottom */
+    background: radial-gradient(120vh at 50% -20px, #0E2B2B , #000), #121316 !important;
+  }
+
+  #meet-us .container {
+    max-width: 1200px; /* Limit container width */
+    margin: 0 auto; /* Center container */
+  }
+
+  #meet-us h2 {
+    color: white; /* White text color */
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .team-members {
+    /* Basic flexbox setup for the team members container */
+  }
+
+  .team-member {
+    border-radius: 2rem; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    overflow: hidden; /* Ensure image fits */
+    margin-bottom: 2rem; /* Space between team members */
+    width: 300px;
+    max-width: 300px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .team-member img {
+    border-radius: 1rem;
+    width: 100%; /* Image takes full width */
+    height: auto; /* Auto height to maintain aspect ratio */
+    object-fit: cover; /* Ensures image covers the entire area */
+  }
+
+  .lm-button {
+    cursor: pointer;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    color: #fff !important;
+    border: solid;
+    --tw-border-opacity: 1;
+    border-color:rgb(39 39 42/var(--tw-border-opacity))
+    
+  }
+
+  .lm-button:hover {
+    color: #6BE8E1 !important;
+  }
+
+  .team-member .p-4 {
+    padding: 2rem; /* Add padding to card content */
+  }
+
+  .team-member h3 {
+    font-size: 1.5rem; /* Larger font size for team member name */
+    color: #ffffff; /* Dark gray text color */
+    margin-bottom: 0.5rem;
+  }
+
+  .team-member p {
+    font-size: 1rem;
+    color: #666; /* Light gray text color */
+    margin-bottom: 1rem;
+  }
+
+  .team-member ul {
+    list-style: none; /* Remove list bullets */
+    padding: 0;
+  }
+
+  .team-member li {
+    margin-right: 1rem; /* Spacing between social links */
+  }
+
+  .team-member a {
+    color: #888; /* Gray link color */
+    transition: color 0.3s ease; /* Smooth transition for hover */
+  }
+
+  .team-member a:hover {
+    color: #555; /* Darker gray color on hover */
+  }
+
+  
